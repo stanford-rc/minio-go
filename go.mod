@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/stanford-rc/minio-go/v7
 
 go 1.24.0
 
@@ -24,3 +24,7 @@ require (
 	golang.org/x/sys v0.39.0 // indirect
 	golang.org/x/text v0.32.0 // indirect
 )
+
+replace github.com/minio/crc64nvme => github.com/stanford-rc/minio-crc64nvme v1.1.1
+
+replace github.com/minio/md5-simd => github.com/stanford-rc/minio-md5-simd v1.1.2
